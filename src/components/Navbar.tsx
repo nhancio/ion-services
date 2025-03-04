@@ -7,7 +7,7 @@ const navItems = [
   { name: 'Home', to: 'home', type: 'scroll' },
   { name: 'About Us', to: 'about', type: 'scroll' },
   { name: 'Services', to: 'services', type: 'scroll' },
-  { name: 'Student Success Stories', to: 'clients', type: 'scroll' }, // Changed 'to' value from 'success' to 'clients'
+  { name: 'Success Stories', to: 'clients', type: 'scroll' }, // Changed 'to' value from 'success' to 'clients'
   { name: 'Contact Us', to: 'contact', type: 'scroll' },
 ];
 

@@ -53,46 +53,11 @@ const About: React.FC = () => {
           className="space-y-6"
         >
           <motion.p variants={itemVariants} className="text-lg text-gray-700 leading-relaxed">
-            <span className="font-semibold text-blue-600">Ion Semiconductors</span> was founded with the mission of empowering enthusiastic freshers by aligning their skills with industry needs. As a leader in VLSI frontend and backend training, we have over three years of proven expertise in this field.
+            At <span className="font-semibold text-blue-600">Ion Semiconductors</span>, we are dedicated to empowering aspiring professionals by aligning their skills with the demands of the industry. As a leading provider of VLSI frontend and backend training, we bring over three years of proven expertise to the table.
           </motion.p>
           <motion.p variants={itemVariants} className="text-lg text-gray-700 leading-relaxed">
-            Our comprehensive training programs are designed to bridge the gap between academic knowledge and industry requirements, ensuring our students are job-ready upon completion.
+            Our comprehensive training programs are meticulously crafted to bridge the gap between academic knowledge and real-world industry requirements. We ensure that our employees are fully equipped and make them valuable assets to future projects. Join us in shaping your career!
           </motion.p>
-          <motion.p variants={itemVariants} className="text-lg text-gray-700 leading-relaxed">
-            A highly skilled team of 25 experienced engineers, including Architects, Designers, and Verification Engineers, collaborates to drive innovation. The team also comprises Analog Engineers specializing in circuit design and optimization. FPGA engineers focus on efficient flow, implementation, and hardware acceleration. Together, they ensure seamless development, verification, and deployment of cutting-edge technology.
-          </motion.p>
-          
-          <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-            <div className="flex items-start">
-              <div className="flex-shrink-0">
-                <Users className="h-6 w-6 text-blue-600" />
-              </div>
-              <div className="ml-3">
-                <h3 className="text-lg font-medium text-gray-900">Industry Collaborations</h3>
-                <p className="mt-1 text-gray-600">Partnered with leading semiconductor companies</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start">
-              <div className="flex-shrink-0">
-                <Award className="h-6 w-6 text-blue-600" />
-              </div>
-              <div className="ml-3">
-                <h3 className="text-lg font-medium text-gray-900">Placements</h3>
-                <p className="mt-1 text-gray-600">High success rate in student placements</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start">
-              <div className="flex-shrink-0">
-                <BookOpen className="h-6 w-6 text-blue-600" />
-              </div>
-              <div className="ml-3">
-                <h3 className="text-lg font-medium text-gray-900">Curriculum</h3>
-                <p className="mt-1 text-gray-600">Industry-aligned, practical training</p>
-              </div>
-            </div>
-          </motion.div>
         </motion.div>
         
         <motion.div

@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-gray-400 mb-4">
-              Empowering the next generation of semiconductor professionals with industry-aligned training and hands-on experience.
+            Equipping the Future of Semiconductor Professionals with Industry-Driven and Practical Experience
             </p>
           </div>
           
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-blue-400 mr-2 mt-1" />
-                <span className="text-gray-400">info@ionsemiconductors.com</span>
+                <span className="text-gray-400">pavan@ionsemiconductor.com</span>
               </li>
             </ul>
           </div>

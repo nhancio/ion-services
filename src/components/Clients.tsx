@@ -92,7 +92,7 @@ const Clients: React.FC = () => {
         className="text-center mb-12"
       >
         <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-          Student Success Stories
+         Success Stories
         </motion.h2>
         <motion.div variants={itemVariants} className="w-20 h-1 bg-blue-600 mx-auto mb-6"></motion.div>
         <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -161,9 +161,6 @@ const Clients: React.FC = () => {
         animate={inView ? "visible" : "hidden"}
         className="text-center mt-12"
       >
-        <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-transform hover:-translate-y-1">
-          View Student Projects
-        </button>
       </motion.div>
     </div>
   );
