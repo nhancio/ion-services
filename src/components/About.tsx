@@ -67,7 +67,7 @@ const About: React.FC = () => {
           className="rounded-lg overflow-hidden shadow-xl"
         >
           <img 
-            src="/src/assets/web-images/image.jpg" 
+            src="/images/web-images/image.jpg" 
             alt="VLSI Training" 
             className="w-full h-full object-cover"
           />
