@@ -4,19 +4,19 @@ import { Mail, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-beige text-darkTeal">
+    <footer className="bg-beige text-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Tagline */}
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/src/assets/ion-logo.png" 
+                src="/images/ion-logo.png" 
                 alt="Ion Semiconductors" 
                 className="h-12 w-auto"
               />
             </div>
-            <p className="text-darkTeal">
+            <p className="text-black">
               Equipping the Future of Semiconductor Professionals with Industry-Driven and Practical Experience
             </p>
           </div>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
+                  className="text-black hover:text-maroon transition-colors cursor-pointer"
                 >
                   Home
                 </Link>
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
+                  className="text-black hover:text-maroon transition-colors cursor-pointer"
                 >
                   About Us
                 </Link>
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
+                  className="text-black hover:text-maroon transition-colors cursor-pointer"
                 >
                   Services
                 </Link>
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
+                  className="text-black hover:text-maroon transition-colors cursor-pointer"
                 >
                   Contact
                 </Link>
@@ -82,18 +82,18 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-maroon mr-2 mt-1" />
-                <span className="text-darkTeal">+91 93461 52382</span>
+                <span className="text-black">+91 93461 52382</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-maroon mr-2 mt-1" />
-                <span className="text-darkTeal">anilm@ionsemiconductor.com</span>
+                <span className="text-black">anilm@ionsemiconductor.com</span>
               </li>
             </ul>
           </div>
         </div>
         
         {/* Copyright */}
-        <div className="border-t border-darkTeal mt-8 pt-6 text-center text-darkTeal">
+        <div className="border-t border-black mt-8 pt-6 text-center text-black">
           <p>&copy; {new Date().getFullYear()} Ion Semiconductors. All rights reserved.</p>
         </div>
       </div>

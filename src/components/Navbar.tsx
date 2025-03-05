@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
       return (
         <RouterLink
           to={`/${item.to === 'home' ? '' : item.to}`}
-          className="px-3 py-2 text-base font-medium text-darkTeal hover:text-maroon transition-colors"
+          className="px-3 py-2 text-base font-medium text-black hover:text-maroon transition-colors"
         >
           {item.name}
         </RouterLink>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
       return (
         <RouterLink
           to={item.to}
-          className="px-3 py-2 text-base font-medium text-darkTeal hover:text-maroon transition-colors"
+          className="px-3 py-2 text-base font-medium text-black hover:text-maroon transition-colors"
         >
           {item.name}
         </RouterLink>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
         smooth={true}
         offset={-64}
         duration={500}
-        className="px-3 py-2 text-base font-medium text-darkTeal hover:text-maroon cursor-pointer transition-colors"
+        className="px-3 py-2 text-base font-medium text-black hover:text-maroon cursor-pointer transition-colors"
       >
         {item.name}
       </ScrollLink>
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-darkTeal hover:text-maroon focus:outline-none"
+              className="text-black hover:text-maroon focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>

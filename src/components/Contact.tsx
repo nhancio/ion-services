@@ -59,10 +59,10 @@ const Contact: React.FC = () => {
         animate={inView ? "visible" : "hidden"}
         className="text-center mb-12"
       >
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-black mb-4">
           Contact Us
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-black mx-auto mb-6"></motion.div>
         <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
           Get in touch with us for more information about our Services and services
         </motion.p>
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
         >
           <motion.div variants={itemVariants} className="flex items-start">
             <div className="flex-shrink-0">
-              <Clock className="h-6 w-6 text-blue-600" />
+              <Clock className="h-6 w-6 text-maroon" />
             </div>
             <div className="ml-4">
               <h3 className="text-lg font-medium text-gray-900">Walk-in Inquiry Hours</h3>
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
           
           <motion.div variants={itemVariants} className="flex items-start">
             <div className="flex-shrink-0">
-              <Phone className="h-6 w-6 text-blue-600" />
+              <Phone className="h-6 w-6 text-maroon" />
             </div>
             <div className="ml-4">
               <h3 className="text-lg font-medium text-gray-900">Phone</h3>
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
           
           <motion.div variants={itemVariants} className="flex items-start">
             <div className="flex-shrink-0">
-              <Mail className="h-6 w-6 text-blue-600" />
+              <Mail className="h-6 w-6 text-maroon" />
             </div>
             <div className="ml-4">
               <h3 className="text-lg font-medium text-gray-900">Email</h3>
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
         >
           <motion.div 
             variants={itemVariants}
-            className="bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-8"
+            className="bg-lightBeige border border-black/20 rounded-lg shadow-lg p-8"
           >
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Send us a message</h3>
             

@@ -19,14 +19,14 @@
 
 @layer components {
   .heading-serif {
-    @apply font-serif tracking-tight text-darkTeal;
+    @apply font-serif tracking-tight text-black;
   }
   
   .body-sans {
-    @apply font-sans leading-relaxed text-darkTeal;
+    @apply font-sans leading-relaxed text-black;
   }
   
   .nav-text {
-    @apply font-sans font-medium text-darkTeal;
+    @apply font-sans font-medium text-black;
   }
 }

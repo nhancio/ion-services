@@ -9,7 +9,11 @@ declare global {
 
 const TawkToChat = () => {
   useEffect(() => {
-    // Tawk.to Script
+    // Create a callback function that will be called when Tawk is ready
+    window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_LoadStart = new Date();
+
+    // Initialize Tawk.to Script
     const s1 = document.createElement("script");
     const s0 = document.getElementsByTagName("script")[0];
     
@@ -18,7 +22,9 @@ const TawkToChat = () => {
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     
-    s0.parentNode?.insertBefore(s1, s0);
+    if (s0 && s0.parentNode) {
+      s0.parentNode.insertBefore(s1, s0);
+    }
 
     return () => {
       // Cleanup if needed

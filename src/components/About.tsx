@@ -39,7 +39,7 @@ const About: React.FC = () => {
         animate={inView ? "visible" : "hidden"}
         className="text-center mb-12"
       >
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-black mb-4">
           About Us
         </motion.h2>
         <motion.div variants={itemVariants} className="w-20 h-1 bg-maroon mx-auto mb-6"></motion.div>
@@ -52,10 +52,10 @@ const About: React.FC = () => {
           animate={inView ? "visible" : "hidden"}
           className="space-y-6"
         >
-          <motion.p variants={itemVariants} className="text-lg text-darkTeal leading-relaxed">
+          <motion.p variants={itemVariants} className="text-lg text-black leading-relaxed">
             At <span className="font-semibold text-maroon">Ion Semiconductors</span>, we are dedicated to empowering aspiring professionals by aligning their skills with the demands of the industry. As a leading provider of VLSI frontend and backend training, we bring over three years of proven expertise to the table.
           </motion.p>
-          <motion.p variants={itemVariants} className="text-lg text-darkTeal leading-relaxed">
+          <motion.p variants={itemVariants} className="text-lg text-black leading-relaxed">
             Our comprehensive training programs are meticulously crafted to bridge the gap between academic knowledge and real-world industry requirements. We ensure that our employees are fully equipped and make them valuable assets to future projects. Join us in shaping your career!
           </motion.p>
         </motion.div>
@@ -67,7 +67,7 @@ const About: React.FC = () => {
           className="rounded-lg overflow-hidden shadow-xl"
         >
           <img 
-            src="/images/web-images/image.jpg" 
+            src="/images/aboutus.png" 
             alt="VLSI Training" 
             className="w-full h-full object-cover"
           />

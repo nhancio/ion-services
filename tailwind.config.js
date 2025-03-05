@@ -11,7 +11,7 @@ export default {
         secondary: '#fff1e5',
         lightBeige: '#FCEFE3',
         beige: '#EAD7C5',
-        darkTeal: '#005F60',
+        black: '#000000',
         maroon: '#9E1F50',
         black: '#000000',
       },

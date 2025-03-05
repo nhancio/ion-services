@@ -8,37 +8,37 @@ const serviceCards = [
   {
     title: "Design and Verification Services",
     content: "Silicon design engineering services company to Tapeout multiple SoC's with expertise across verification disciplines: IP/SoC design and development, IP/Subsystem/SoC verification, Formal, Low Power, Mixed signal ASIC.",
-    icon: <Cpu className="h-10 w-10 text-darkTeal" />
+    icon: <Cpu className="h-10 w-10 text-black" />
   },
   {
     title: "IC Design",
     content: "Architecture Modelling, Micro-Architecture Definition, IP/Subsystem/SoC Design, Low Power Design, expertise in various protocols including PCIE, USB, DDR, HDMI, and more.",
-    icon: <Layers className="h-10 w-10 text-darkTeal" />
+    icon: <Layers className="h-10 w-10 text-black" />
   },
   {
     title: "Chip Verification",
     content: "Comprehensive verification services including UVM methodology, test plan development, functional coverage, and low power verification.",
-    icon: <Shield className="h-10 w-10 text-darkTeal" />
+    icon: <Shield className="h-10 w-10 text-black" />
   },
   {
     title: "Integration Services",
     content: "Full language support for Verilog, SystemVerilog, VHDL with IP-XACT, UPF, SDC, LEF/DEF support and physically aware integration process.",
-    icon: <Layout className="h-10 w-10 text-darkTeal" />
+    icon: <Layout className="h-10 w-10 text-black" />
   },
   {
     title: "DFT and Testing",
     content: "Complete DFT architecture, methodology & flow including scan insertion, BIST, JTAG implementation, and test coverage analysis.",
-    icon: <Wrench className="h-10 w-10 text-darkTeal" />
+    icon: <Wrench className="h-10 w-10 text-black" />
   },
   {
     title: "Automotive ISO 26262",
     content: "ASIL-B/ASIL-D Functional Safety Activities, consulting, and automotive-grade design and testing services.",
-    icon: <Car className="h-10 w-10 text-darkTeal" />
+    icon: <Car className="h-10 w-10 text-black" />
   },
   {
     title: "Analog Circuits",
     content: "Design and implementation of CMOS Amplifiers, PLLs, SERDES blocks, and PMIC components with full verification procedures.",
-    icon: <Zap className="h-10 w-10 text-darkTeal" />
+    icon: <Zap className="h-10 w-10 text-black" />
   }
 ];
 
@@ -188,10 +188,10 @@ const Services: React.FC = () => {
         animate={inView ? "visible" : "hidden"}
         className="text-center mb-12"
       >
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-black mb-4">
           Our Services
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-black mx-auto mb-6"></motion.div>
       </motion.div>
 
       {/* Service Cards Section */}
@@ -201,7 +201,7 @@ const Services: React.FC = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300"
+              className="bg-lightBeige border border-black/20 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-blue-600 mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
@@ -212,7 +212,7 @@ const Services: React.FC = () => {
           {/* Center aligned Analog Circuits card */}
           <motion.div
             variants={itemVariants}
-            className="bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1 lg:col-start-2"
+            className="bg-lightBeige border border-black/20 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1 lg:col-start-2"
           >
             <div className="text-blue-600 mb-4">{serviceCards[6].icon}</div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">{serviceCards[6].title}</h3>
@@ -223,18 +223,18 @@ const Services: React.FC = () => {
 
       {/* Service Models Section - 2x2 Grid */}
       <motion.section variants={itemVariants} className="mb-16">
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4 text-center">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-black mb-4 text-center">
           Service Models
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-black mx-auto mb-6"></motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {serviceModels.map((model, index) => (
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-6"
+              className="bg-lightBeige border border-black/20 rounded-lg shadow-lg p-6"
             >
-              <h4 className="text-xl font-bold text-darkTeal mb-4">{model.title}</h4>
+              <h4 className="text-xl font-bold text-black mb-4">{model.title}</h4>
               <ul className="space-y-2">
                 {model.features.map((feature, idx) => (
                   <li key={idx} className="text-gray-700">• {feature}</li>
@@ -247,24 +247,24 @@ const Services: React.FC = () => {
 
       {/* Domains Section - 3x2 Grid + Center Card */}
       <motion.section variants={itemVariants}>
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4 text-center">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-black mb-4 text-center">
           Domains
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-black mx-auto mb-6"></motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {domains.slice(0, 6).map((domain, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-6 cursor-pointer hover:shadow-xl transition-shadow"
+              className="bg-lightBeige border border-black/20 rounded-lg shadow-lg p-6 cursor-pointer hover:shadow-xl transition-shadow"
               onClick={() => setExpandedDomain(expandedDomain === index ? null : index)}
             >
               <div className="flex justify-between items-start">
-                <h4 className="text-xl font-bold text-darkTeal mb-2">{domain.title}</h4>
+                <h4 className="text-xl font-bold text-black mb-2">{domain.title}</h4>
                 {expandedDomain === index ? (
-                  <ChevronUp className="w-5 h-5 text-darkTeal" />
+                  <ChevronUp className="w-5 h-5 text-black" />
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-darkTeal" />
+                  <ChevronDown className="w-5 h-5 text-black" />
                 )}
               </div>
               
@@ -294,15 +294,15 @@ const Services: React.FC = () => {
           {domains.length >= 7 && (
             <motion.div
               variants={itemVariants}
-              className="md:col-span-2 lg:col-span-3 max-w-lg mx-auto bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-6 cursor-pointer hover:shadow-xl transition-shadow"
+              className="md:col-span-2 lg:col-span-3 max-w-lg mx-auto bg-lightBeige border border-black/20 rounded-lg shadow-lg p-6 cursor-pointer hover:shadow-xl transition-shadow"
               onClick={() => setExpandedDomain(expandedDomain === 6 ? null : 6)}
             >
               <div className="flex justify-between items-start">
-                <h4 className="text-xl font-bold text-darkTeal mb-2">{domains[6].title}</h4>
+                <h4 className="text-xl font-bold text-black mb-2">{domains[6].title}</h4>
                 {expandedDomain === 6 ? (
-                  <ChevronUp className="w-5 h-5 text-darkTeal" />
+                  <ChevronUp className="w-5 h-5 text-black" />
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-darkTeal" />
+                  <ChevronDown className="w-5 h-5 text-black" />
                 )}
               </div>
               

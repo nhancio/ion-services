@@ -91,10 +91,10 @@ const Clients: React.FC = () => {
         animate={inView ? "visible" : "hidden"}
         className="text-center mb-12"
       >
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-black mb-4">
          Success Stories
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-black mx-auto mb-6"></motion.div>
         <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
           Our graduates are working at top semiconductor companies around the world
         </motion.p>

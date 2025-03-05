@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-maroon">{slide.title}</h1>
             <p className="text-xl md:text-2xl max-w-3xl text-beige">{slide.description}</p>
-            <button className="mt-8 px-6 py-3 bg-darkTeal text-white rounded-md hover:bg-maroon transition-transform hover:-translate-y-1">
+            <button className="mt-8 px-6 py-3 bg-black text-white rounded-md hover:bg-maroon transition-transform hover:-translate-y-1">
               Explore Services
             </button>
           </motion.div>
