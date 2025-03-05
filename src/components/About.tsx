@@ -31,7 +31,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-beige">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -39,10 +39,10 @@ const About: React.FC = () => {
         animate={inView ? "visible" : "hidden"}
         className="text-center mb-12"
       >
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4">
           About Us
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-blue-600 mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-maroon mx-auto mb-6"></motion.div>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -52,10 +52,10 @@ const About: React.FC = () => {
           animate={inView ? "visible" : "hidden"}
           className="space-y-6"
         >
-          <motion.p variants={itemVariants} className="text-lg text-gray-700 leading-relaxed">
-            At <span className="font-semibold text-blue-600">Ion Semiconductors</span>, we are dedicated to empowering aspiring professionals by aligning their skills with the demands of the industry. As a leading provider of VLSI frontend and backend training, we bring over three years of proven expertise to the table.
+          <motion.p variants={itemVariants} className="text-lg text-darkTeal leading-relaxed">
+            At <span className="font-semibold text-maroon">Ion Semiconductors</span>, we are dedicated to empowering aspiring professionals by aligning their skills with the demands of the industry. As a leading provider of VLSI frontend and backend training, we bring over three years of proven expertise to the table.
           </motion.p>
-          <motion.p variants={itemVariants} className="text-lg text-gray-700 leading-relaxed">
+          <motion.p variants={itemVariants} className="text-lg text-darkTeal leading-relaxed">
             Our comprehensive training programs are meticulously crafted to bridge the gap between academic knowledge and real-world industry requirements. We ensure that our employees are fully equipped and make them valuable assets to future projects. Join us in shaping your career!
           </motion.p>
         </motion.div>

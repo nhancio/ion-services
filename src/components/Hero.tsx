@@ -6,17 +6,17 @@ const slides = [
   {
     title: "Design and Verification Services",
     description: "Silicon design engineering services specializing in SoC tapeouts with expertise in IP/Subsystem/SoC design, verification, and mixed-signal ASIC development.",
-    image: "/src/assets/web-images/slide1.jpg"
+    image: "/src/assets/web-images/slide1.webp"
   },
   {
     title: "IC Design & Integration",
     description: "Comprehensive IC design services including Architecture Modeling, Low Power Design, and full integration support for various protocols like PCIE, USB, DDR, HDMI.",
-    image: "/src/assets/web-images/slide2.jpg"
+    image: "/src/assets/web-images/slide2.png"
   },
   {
     title: "Automotive & Safety Solutions",
     description: "ASIL-B/ASIL-D Functional Safety consulting and implementation with ISO 26262 compliance for automotive semiconductor designs.",
-    image: "/src/assets/web-images/slide3.jpg"
+    image: "/src/assets/web-images/slide3.jpg" // Changed extension from .png to .jpg
   },
 ];
 
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
   }, [nextSlide]);
 
   return (
-    <div className="relative h-[calc(100vh-70px)] mt-[70px] overflow-hidden">
+    <div className="relative h-[calc(100vh-70px)] mt-[70px] overflow-hidden bg-beige">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -62,9 +62,9 @@ const Hero: React.FC = () => {
             animate={{ opacity: index === current ? 1 : 0, y: index === current ? 0 : 20 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">{slide.title}</h1>
-            <p className="text-xl md:text-2xl max-w-3xl">{slide.description}</p>
-            <button className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-transform hover:-translate-y-1">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-maroon">{slide.title}</h1>
+            <p className="text-xl md:text-2xl max-w-3xl text-beige">{slide.description}</p>
+            <button className="mt-8 px-6 py-3 bg-darkTeal text-white rounded-md hover:bg-maroon transition-transform hover:-translate-y-1">
               Explore Services
             </button>
           </motion.div>
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
       </button>
       
       <button
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-full bg-white/30 text-white hover:bg-white/50 transition-all"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-full bg-white/30 text-white hover:bg-white/50 transition-all"
         onClick={nextSlide}
       >
         <ChevronRight className="h-6 w-6" />

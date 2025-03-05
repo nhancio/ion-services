@@ -4,25 +4,27 @@ import { Mail, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <footer className="bg-beige text-darkTeal">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Logo and Tagline */}
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/src/assets/ion-logo.jpeg" 
+                src="/src/assets/ion-logo.png" 
                 alt="Ion Semiconductors" 
-                className="h-12 w-auto" // Adjusted height for JPEG logo
+                className="h-12 w-auto"
               />
             </div>
-            <p className="text-gray-400 mb-4">
-            Equipping the Future of Semiconductor Professionals with Industry-Driven and Practical Experience
+            <p className="text-darkTeal">
+              Equipping the Future of Semiconductor Professionals with Industry-Driven and Practical Experience
             </p>
           </div>
           
+          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-2">
               <li>
                 <Link
                   to="home"
@@ -30,7 +32,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
                 >
                   Home
                 </Link>
@@ -42,7 +44,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
                 >
                   About Us
                 </Link>
@@ -54,7 +56,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
                 >
                   Services
                 </Link>
@@ -66,7 +68,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                  className="text-darkTeal hover:text-maroon transition-colors cursor-pointer"
                 >
                   Contact
                 </Link>
@@ -74,33 +76,24 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li className="text-gray-400 hover:text-white transition-colors">VLSI Training</li>
-              <li className="text-gray-400 hover:text-white transition-colors">Corporate Training</li>
-              <li className="text-gray-400 hover:text-white transition-colors">Placement Assistance</li>
-              <li className="text-gray-400 hover:text-white transition-colors">Industry Projects</li>
-              <li className="text-gray-400 hover:text-white transition-colors">Knowledge Web</li>
-            </ul>
-          </div>
-          
+          {/* Contact Information */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               <li className="flex items-start">
-                <Phone className="h-5 w-5 text-blue-400 mr-2 mt-1" />
-                <span className="text-gray-400">+91 98765 43210</span>
+                <Phone className="h-5 w-5 text-maroon mr-2 mt-1" />
+                <span className="text-darkTeal">+91 93461 52382</span>
               </li>
               <li className="flex items-start">
-                <Mail className="h-5 w-5 text-blue-400 mr-2 mt-1" />
-                <span className="text-gray-400">pavan@ionsemiconductor.com</span>
+                <Mail className="h-5 w-5 text-maroon mr-2 mt-1" />
+                <span className="text-darkTeal">anilm@ionsemiconductor.com</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        {/* Copyright */}
+        <div className="border-t border-darkTeal mt-8 pt-6 text-center text-darkTeal">
           <p>&copy; {new Date().getFullYear()} Ion Semiconductors. All rights reserved.</p>
         </div>
       </div>

@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
       return (
         <RouterLink
           to={`/${item.to === 'home' ? '' : item.to}`}
-          className="px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 transition-colors"
+          className="px-3 py-2 text-base font-medium text-darkTeal hover:text-maroon transition-colors"
         >
           {item.name}
         </RouterLink>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
       return (
         <RouterLink
           to={item.to}
-          className="px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 transition-colors"
+          className="px-3 py-2 text-base font-medium text-darkTeal hover:text-maroon transition-colors"
         >
           {item.name}
         </RouterLink>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
         smooth={true}
         offset={-64}
         duration={500}
-        className="px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 cursor-pointer transition-colors"
+        className="px-3 py-2 text-base font-medium text-darkTeal hover:text-maroon cursor-pointer transition-colors"
       >
         {item.name}
       </ScrollLink>
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-secondary backdrop-blur-sm shadow-md z-50 h-16">
+    <nav className="fixed top-0 left-0 right-0 bg-beige backdrop-blur-sm shadow-md z-50 h-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div 
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             onClick={handleLogoClick}
           >
             <img 
-              src="/src/assets/ion-logo.jpeg" 
+              src="/src/assets/ion-logo.png" 
               alt="Ion Semiconductors" 
               className="h-12 w-auto" // Adjusted height for JPEG logo
             />
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-indigo-600 focus:outline-none"
+              className="text-darkTeal hover:text-maroon focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
       
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-sm shadow-lg">
+        <div className="md:hidden bg-lightBeige/95 backdrop-blur-sm shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <div key={item.name} className="block" onClick={() => setIsOpen(false)}>

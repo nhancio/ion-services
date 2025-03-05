@@ -14,7 +14,7 @@ import MainContent from './components/MainContent';
 function App() {
   return (
     <Router>
-      <div className="font-sans text-base leading-relaxed">
+      <div className="font-sans text-base leading-relaxed bg-beige">
         <Navbar />
         <Routes>
           <Route path="/login" element={<Login />} />

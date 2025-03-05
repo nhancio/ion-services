@@ -83,7 +83,7 @@ const Clients: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-beige">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -104,7 +104,7 @@ const Clients: React.FC = () => {
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         {clients.slice(0, 9).map((client) => (
           <motion.div
@@ -112,12 +112,12 @@ const Clients: React.FC = () => {
             variants={itemVariants}
             className="group min-h-[450px]"
           >
-            <div className="relative h-full overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
-              <div className="w-full h-80"> {/* Increased height from h-72 to h-80 */}
+            <div className="relative h-full overflow-hidden rounded-lg bg-lightBeige shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+              <div className="w-full h-80">
                 <img
                   src={client.image}
                   alt={`Success Story ${client.id}`}
-                  className="w-full h-full object-cover object-center" /* Added object-center */
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               
@@ -136,7 +136,7 @@ const Clients: React.FC = () => {
             variants={itemVariants}
             className="group min-h-[450px] lg:col-start-2"
           >
-            <div className="relative h-full overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="relative h-full overflow-hidden rounded-lg bg-lightBeige shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="w-full h-80">
                 <img
                   src={clients[9].image}

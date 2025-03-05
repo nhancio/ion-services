@@ -5,6 +5,11 @@
 @layer base {
   html {
     font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #EAD7C5; /* Beige background color */
+  }
+  
+  body {
+    background-color: #EAD7C5; /* Beige background color */
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -14,14 +19,14 @@
 
 @layer components {
   .heading-serif {
-    @apply font-serif tracking-tight;
+    @apply font-serif tracking-tight text-darkTeal;
   }
   
   .body-sans {
-    @apply font-sans leading-relaxed;
+    @apply font-sans leading-relaxed text-darkTeal;
   }
   
   .nav-text {
-    @apply font-sans font-medium;
+    @apply font-sans font-medium text-darkTeal;
   }
 }

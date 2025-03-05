@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-beige">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="ml-4">
               <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-              <p className="mt-1 text-gray-600">+91 98765 43210</p>
+              <p className="mt-1 text-gray-600">+91 93461 52382</p>
             </div>
           </motion.div>
           
@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="ml-4">
               <h3 className="text-lg font-medium text-gray-900">Email</h3>
-              <p className="mt-1 text-gray-600">pavan@ionsemiconductor.com</p>
+              <p className="mt-1 text-gray-600">anilm@ionsemiconductor.com</p>
             </div>
           </motion.div>
         </motion.div>
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
         >
           <motion.div 
             variants={itemVariants}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-8"
           >
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Send us a message</h3>
             
