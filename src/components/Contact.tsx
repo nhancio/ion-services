@@ -202,46 +202,6 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="education" className="block text-sm font-medium text-gray-700 mb-1">
-                    Education Qualification *
-                  </label>
-                  <input
-                    type="text"
-                    id="education"
-                    {...register('education', { required: 'Education qualification is required' })}
-                    className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                      errors.education ? 'border-red-500' : 'border-gray-300'
-                    }`}
-                  />
-                  {errors.education && (
-                    <p className="mt-1 text-sm text-red-600">{errors.education.message}</p>
-                  )}
-                </div>
-                
-                <div>
-                  <label htmlFor="passingYear" className="block text-sm font-medium text-gray-700 mb-1">
-                    Year of Passing *
-                  </label>
-                  <input
-                    type="text"
-                    id="passingYear"
-                    {...register('passingYear', { 
-                      required: 'Year of passing is required',
-                      pattern: {
-                        value: /^(19|20)\d{2}$/,
-                        message: 'Please enter a valid year'
-                      }
-                    })}
-                    className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                      errors.passingYear ? 'border-red-500' : 'border-gray-300'
-                    }`}
-                    placeholder="YYYY"
-                  />
-                  {errors.passingYear && (
-                    <p className="mt-1 text-sm text-red-600">{errors.passingYear.message}</p>
-                  )}
-                </div>
               </div>
               
               <div>
