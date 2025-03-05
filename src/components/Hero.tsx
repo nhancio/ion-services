@@ -6,17 +6,17 @@ const slides = [
   {
     title: "Design and Verification Services",
     description: "Silicon design engineering services specializing in SoC tapeouts with expertise in IP/Subsystem/SoC design, verification, and mixed-signal ASIC development.",
-    image: "/src/assets/web-images/slide1.webp"
+    image: "/images/web-images/slide1.webp"  // Updated path
   },
   {
     title: "IC Design & Integration",
     description: "Comprehensive IC design services including Architecture Modeling, Low Power Design, and full integration support for various protocols like PCIE, USB, DDR, HDMI.",
-    image: "/src/assets/web-images/slide2.png"
+    image: "/images/web-images/slide2.png"  // Updated path
   },
   {
     title: "Automotive & Safety Solutions",
     description: "ASIL-B/ASIL-D Functional Safety consulting and implementation with ISO 26262 compliance for automotive semiconductor designs.",
-    image: "/src/assets/web-images/slide3.jpg" // Changed extension from .png to .jpg
+    image: "/images/web-images/slide3.jpg"  // Updated path
   },
 ];
 

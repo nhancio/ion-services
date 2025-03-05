@@ -82,9 +82,9 @@ const Navbar: React.FC = () => {
             onClick={handleLogoClick}
           >
             <img 
-              src="/src/assets/ion-logo.png" 
+              src="/images/ion-logo.png"  // Updated path
               alt="Ion Semiconductors" 
-              className="h-12 w-auto" // Adjusted height for JPEG logo
+              className="h-12 w-auto"
             />
           </div>
           

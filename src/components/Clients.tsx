@@ -5,52 +5,52 @@ import { useInView } from 'react-intersection-observer';
 const clients = [
   {
     id: 1,
-    image: '/src/assets/successstories/1.jpeg',
+    image: '/images/successstories/1.jpeg',
     testimonial: 'From dreams to reality! With ionsemi guidance, selected to dream client. They\'re now contributing to excellent guidance in SV, UVM, protocols and projects.'
   },
   {
     id: 2,
-    image: '/src/assets/successstories/2.jpeg',
+    image: '/images/successstories/2.jpeg',
     testimonial: 'The verification guidance was excellent. The projects were challenging and prepared me to get selected topmost clients in industry.'
   },
   {
     id: 3,
-    image: '/src/assets/successstories/3.jpeg',
+    image: '/images/successstories/3.jpeg',
     testimonial: 'The SystemVerilog and UVM projects were comprehensive and hands-on. It prepared me well for my role at AMD.'
   },
   {
     id: 4,
-    image: '/src/assets/successstories/4.jpeg',
+    image: '/images/successstories/4.jpeg',
     testimonial: 'Assignments are designed to assess a candidate\'s skills with which weak areas were identified. Verification experts help us to clear the doubts after tests and make strong in weak areas.'
   },
   {
     id: 5,
-    image: '/src/assets/successstories/5.jpeg',
+    image: '/images/successstories/5.jpeg',
     testimonial: 'Multiple pre-tests and mock interviews helped me a lot to crack the interviews. DFT design experts at Ion Semiconductors gave me the practical skills I needed to land my dream job at top most client in industry.'
   },
   {
     id: 6,
-    image: '/src/assets/successstories/6.jpeg',
+    image: '/images/successstories/6.jpeg',
     testimonial: 'The DFT at Ion Semiconductors is top-notch. I learned industry-standard tools and methodologies. In short Ion Semi is a good stage to gain knowledge and prepare for your career.'
   },
   {
     id: 7,
-    image: '/src/assets/successstories/7.jpeg',
+    image: '/images/successstories/7.jpeg',
     testimonial: 'The DFT at IonSemi was excellent. The instructors have industry experience and provided practical insights.'
   },
   {
     id: 8,
-    image: '/src/assets/successstories/8.jpeg',
+    image: '/images/successstories/8.jpeg',
     testimonial: 'The DFT at IonSemi was comprehensive and practical. It helped me secure a position at AMD. And about the staff, all are well experienced, trained and also very friendly to everyone.'
   },
   {
     id: 9,
-    image: '/src/assets/successstories/9.jpeg',
+    image: '/images/successstories/9.jpeg',
     testimonial: 'Initially, I found the Analog topics to be rather difficult & also I found it difficult to explain what I have learnt. The soft skill sessions, regular presentations and technical assemblages helped me here.'
   },
   {
     id: 10,
-    image: '/src/assets/successstories/10.jpeg',
+    image: '/images/successstories/10.jpeg',
     testimonial: 'One of the main advantage in ionsemi is it focuses on self learning. I am happy to say that I learnt SV,UVM in flipped mode which helped me in getting placed in client location.'
   }
 ];
