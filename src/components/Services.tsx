@@ -188,10 +188,10 @@ const Services: React.FC = () => {
         animate={inView ? "visible" : "hidden"}
         className="text-center mb-12"
       >
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4">
           Our Services
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-blue-600 mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
       </motion.div>
 
       {/* Service Cards Section */}
@@ -223,10 +223,10 @@ const Services: React.FC = () => {
 
       {/* Service Models Section - 2x2 Grid */}
       <motion.section variants={itemVariants} className="mb-16">
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4 text-center">
           Service Models
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-blue-600 mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {serviceModels.map((model, index) => (
             <motion.div 
@@ -234,7 +234,7 @@ const Services: React.FC = () => {
               variants={itemVariants}
               className="bg-lightBeige border border-darkTeal/20 rounded-lg shadow-lg p-6"
             >
-              <h4 className="text-xl font-bold text-blue-600 mb-4">{model.title}</h4>
+              <h4 className="text-xl font-bold text-darkTeal mb-4">{model.title}</h4>
               <ul className="space-y-2">
                 {model.features.map((feature, idx) => (
                   <li key={idx} className="text-gray-700">• {feature}</li>
@@ -247,10 +247,10 @@ const Services: React.FC = () => {
 
       {/* Domains Section - 3x2 Grid + Center Card */}
       <motion.section variants={itemVariants}>
-        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
+        <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-darkTeal mb-4 text-center">
           Domains
         </motion.h2>
-        <motion.div variants={itemVariants} className="w-20 h-1 bg-blue-600 mx-auto mb-6"></motion.div>
+        <motion.div variants={itemVariants} className="w-20 h-1 bg-darkTeal mx-auto mb-6"></motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {domains.slice(0, 6).map((domain, index) => (
             <motion.div
@@ -260,11 +260,11 @@ const Services: React.FC = () => {
               onClick={() => setExpandedDomain(expandedDomain === index ? null : index)}
             >
               <div className="flex justify-between items-start">
-                <h4 className="text-xl font-bold text-blue-600 mb-2">{domain.title}</h4>
+                <h4 className="text-xl font-bold text-darkTeal mb-2">{domain.title}</h4>
                 {expandedDomain === index ? (
-                  <ChevronUp className="w-5 h-5 text-blue-600" />
+                  <ChevronUp className="w-5 h-5 text-darkTeal" />
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-blue-600" />
+                  <ChevronDown className="w-5 h-5 text-darkTeal" />
                 )}
               </div>
               
@@ -298,11 +298,11 @@ const Services: React.FC = () => {
               onClick={() => setExpandedDomain(expandedDomain === 6 ? null : 6)}
             >
               <div className="flex justify-between items-start">
-                <h4 className="text-xl font-bold text-blue-600 mb-2">{domains[6].title}</h4>
+                <h4 className="text-xl font-bold text-darkTeal mb-2">{domains[6].title}</h4>
                 {expandedDomain === 6 ? (
-                  <ChevronUp className="w-5 h-5 text-blue-600" />
+                  <ChevronUp className="w-5 h-5 text-darkTeal" />
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-blue-600" />
+                  <ChevronDown className="w-5 h-5 text-darkTeal" />
                 )}
               </div>
               
