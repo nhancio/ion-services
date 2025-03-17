@@ -68,7 +68,7 @@ const About: React.FC = () => {
         >
           <img 
             src="/images/aboutus.png" 
-            alt="VLSI Training" 
+            alt="Semiconductor" 
             className="w-full h-full object-cover"
           />
         </motion.div>
