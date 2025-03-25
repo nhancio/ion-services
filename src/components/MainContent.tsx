@@ -5,7 +5,6 @@ import Services from './Services';
 import Clients from './Clients';
 import Contact from './Contact';
 import Footer from './Footer';
-import TawkToChat from './TawkToChat';
 
 const MainContent: React.FC = () => {
   return (
@@ -28,7 +27,6 @@ const MainContent: React.FC = () => {
         </section>
       </main>
       <Footer />
-      <TawkToChat />
     </>
   );
 };

@@ -3,14 +3,13 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useForm } from 'react-hook-form';
 import { Clock, Phone, Mail } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 type FormData = {
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
-  education: string;
-  passingYear: string;
   message: string;
 };
 
@@ -23,10 +22,28 @@ const Contact: React.FC = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    console.log(data);
-    // Here you would typically send the form data to your backend
-    alert('Form submitted successfully!');
-    reset();
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+    emailjs.send(
+      'service_6px6kds', // Updated service ID
+      'template_2pw93ck', // Updated template ID
+      {
+        firstName: data.firstName,     // Changed to match template
+        lastName: data.lastName,       // Changed to match template
+        email: data.email,
+        phone: data.phone,
+        message: data.message,
+      }
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Message sent successfully!');
+      reset();
+    })
+    .catch((err) => {
+      console.error('FAILED...', err);
+      alert('Failed to send message. Please try again.');
+    });
   };
 
   const containerVariants = {
@@ -64,7 +81,7 @@ const Contact: React.FC = () => {
         </motion.h2>
         <motion.div variants={itemVariants} className="w-20 h-1 bg-black mx-auto mb-6"></motion.div>
         <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Get in touch with us for more information about our Services and services
+          Get in touch with us for more information about our services
         </motion.p>
       </motion.div>
 
@@ -199,9 +216,6 @@ const Contact: React.FC = () => {
                 {errors.phone && (
                   <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>
                 )}
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               </div>
               
               <div>
