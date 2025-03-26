@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useForm } from 'react-hook-form';
-import { Clock, Phone, Mail } from 'lucide-react';
+import { Clock, Phone, Mail, MessageCircle } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 type FormData = {
@@ -108,7 +108,12 @@ const Contact: React.FC = () => {
             </div>
             <div className="ml-4">
               <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-              <p className="mt-1 text-gray-600">+91 93461 52382</p>
+              <a 
+                href="tel:+919346152382"
+                className="mt-1 text-gray-600 hover:text-maroon transition-colors"
+              >
+                +91 93461 52382
+              </a>
             </div>
           </motion.div>
           
@@ -118,7 +123,29 @@ const Contact: React.FC = () => {
             </div>
             <div className="ml-4">
               <h3 className="text-lg font-medium text-gray-900">Email</h3>
-              <p className="mt-1 text-gray-600">info@ionsemiconductors.com</p>
+              <a 
+                href="mailto:info@ionsemiconductors.com" 
+                className="mt-1 text-gray-600 hover:text-maroon transition-colors"
+              >
+                info@ionsemiconductors.com
+              </a>
+            </div>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="flex items-start">
+            <div className="flex-shrink-0">
+              <MessageCircle className="h-6 w-6 text-maroon" />
+            </div>
+            <div className="ml-4">
+              <h3 className="text-lg font-medium text-gray-900">WhatsApp</h3>
+              <a 
+                href="https://api.whatsapp.com/send?phone=919346152382&text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20these%20services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 text-gray-600 hover:text-maroon transition-colors"
+              >
+                Chat with us on WhatsApp
+              </a>
             </div>
           </motion.div>
         </motion.div>
